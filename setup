@@ -1,0 +1,13 @@
+#!/bin/bash -e
+
+echo "----->"
+echo "-----> This script will install tmux and mosh, start mosh-server service,"
+echo "-----> and copy the dotfiles to user's home directory"
+echo "----->"
+
+sudo apt-get -y install tmux
+sudo apt-get -y install mosh
+mosh-server
+
+cp .vimrc ~/.vimrc
+cp .tmux.conf ~/.tmux.conf

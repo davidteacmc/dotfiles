@@ -1,0 +1,9 @@
+set hlsearch
+set nu
+set autoindent
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set background=dark
+syntax on
+filetype on
